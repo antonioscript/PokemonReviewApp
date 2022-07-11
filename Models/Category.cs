@@ -6,6 +6,6 @@ namespace PokemonReviewApp.Models
         
         public string Name { get; set; }
         
-        //public ICollection<PokemonCategory> PokemonCategories { get; set; }
+        public ICollection<PokemonCategory> PokemonCategories { get; set; } //Many-to_many
     }
 }

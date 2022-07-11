@@ -9,8 +9,10 @@ namespace PokemonReviewApp.Models
         public string Gym { get; set; }
 
         public Country Country { get; set; }
+
+        public ICollection<PokemonOwner> PokemonOwners { get; set; } //Many-to-Many
         
         // public string LastName { get; set; }
-        // public ICollection<PokemonOwner> PokemonOwners { get; set; }
+        
     }
 }

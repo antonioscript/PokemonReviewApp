@@ -12,8 +12,8 @@ namespace PokemonReviewApp.Models
 
         public ICollection<Review> Reviews { get; set; }
 
-        // public ICollection<PokemonOwner> PokemonOwners { get; set; }
+        public ICollection<PokemonOwner> PokemonOwners { get; set; } //Many_to_many
 
-        // public ICollection<PokemonCategory> PokemonCategories { get; set; }
+        public ICollection<PokemonCategory> PokemonCategories { get; set; } //Many_to_many
     }
 }
