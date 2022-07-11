@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B0QxqA4aQP7mxv1mzXfa5cwuZ2SCQIdF/Q7C/Uw8vyLe9ma8RpJZToLwdi6Au86UAqNcBXfmrAS9YrQFlk+s2g==",
+  "dgSpecHash": "Xba+iDBKaHWpL/vlueFhMYTLJIG2CWNvVuzgh1+zjRZuXWkWV38K4MYGeoPMw6TtPx4wa+gro0bPINW3kJd5NQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\3 - API Web\\PokemonReviewApp\\PokemonReviewApp.csproj",
+  "projectFilePath": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\PokemonReviewApp\\PokemonReviewApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Antônio Jr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Antônio Jr\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

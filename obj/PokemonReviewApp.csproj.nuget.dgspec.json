@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\3 - API Web\\PokemonReviewApp\\PokemonReviewApp.csproj": {}
+    "C:\\Users\\Antônio Jr\\Documents\\GitHub\\PokemonReviewApp\\PokemonReviewApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\3 - API Web\\PokemonReviewApp\\PokemonReviewApp.csproj": {
+    "C:\\Users\\Antônio Jr\\Documents\\GitHub\\PokemonReviewApp\\PokemonReviewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\3 - API Web\\PokemonReviewApp\\PokemonReviewApp.csproj",
+        "projectUniqueName": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\PokemonReviewApp\\PokemonReviewApp.csproj",
         "projectName": "PokemonReviewApp",
-        "projectPath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\3 - API Web\\PokemonReviewApp\\PokemonReviewApp.csproj",
+        "projectPath": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\PokemonReviewApp\\PokemonReviewApp.csproj",
         "packagesPath": "C:\\Users\\Antônio Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Antônio Jr\\Desktop\\.NET\\200 - ASP.NET\\3 - API Web\\PokemonReviewApp\\obj\\",
+        "outputPath": "C:\\Users\\Antônio Jr\\Documents\\GitHub\\PokemonReviewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Antônio Jr\\AppData\\Roaming\\NuGet\\NuGet.Config"
