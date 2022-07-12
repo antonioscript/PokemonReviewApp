@@ -12,7 +12,7 @@ namespace PokemonReviewApp.Models
 
         public Pokemon Pokemon { get; set; }
 
-        //public int Rating { get; set; }
+        public int Rating { get; set; }
 
         
     }
