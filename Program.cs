@@ -11,7 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 //Sedd
 builder.Services.AddTransient<Seed>();
-//-----------------------------------------------
+//AutoMapper---------------------------------------------
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+//------------------------------------------
+
+//Adicionado após o RP e DI-----------------------------------------------
 builder.Services.AddScoped<IPokemonRepository, PokemonRepository>();
 //---------------------------------------
 
