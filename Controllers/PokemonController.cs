@@ -38,7 +38,7 @@ namespace PokemonReviewApp.Controllers
             return Ok(pokemons);
         }
 
-        
+        //Pegar o Pokemon pelo Id        
         [HttpGet("{pokeId}")]
         [ProducesResponseType(200, Type = typeof(Pokemon))] //Opcional
         [ProducesResponseType(400)] //Opcional
@@ -57,6 +57,7 @@ namespace PokemonReviewApp.Controllers
             return Ok(pokemon);
         }
 
+        //
         [HttpGet("{pokeId}/rating")]
         [ProducesResponseType(200, Type = typeof(decimal))]
         [ProducesResponseType(400)]
