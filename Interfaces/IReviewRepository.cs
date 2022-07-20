@@ -1,0 +1,18 @@
+using PokemonReviewApp.Models;
+
+namespace PokemonReviewApp.Interfaces
+{
+    public interface IReviewRepository
+    {
+        ICollection<Review> GetReviews();
+
+        Review GetReview(int reviewId);
+
+        //Comentários de um pokemon específico
+        ICollection<Review> GetReviewsOfAPokemon(int pokeId);
+
+        bool ReviewExists(int reviewId);
+
+        
+    }
+}
