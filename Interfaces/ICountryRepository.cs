@@ -5,6 +5,7 @@ namespace PokemonReviewApp.Interfaces
 {
     public interface ICountryRepository
     {
+        //Parte de Visualizaçaõ
         ICollection<Country> GetCountries();
 
         Country GetCountry(int id);
@@ -14,5 +15,10 @@ namespace PokemonReviewApp.Interfaces
         ICollection<Owner> GetOwnersFromACountry(int countryId);
         
         bool CountryExists(int id);
+
+        //Parte de Criação
+        bool CreateCountry(Country country);
+        
+        bool Save();
     }
 }

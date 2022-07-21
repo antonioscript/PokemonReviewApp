@@ -4,6 +4,7 @@ namespace PokemonReviewApp.Interfaces
 {
     public interface ICategoryRepository
     {
+        //Parte de Visualização (Get)
         ICollection<Category> GetCategories();
 
         Category GetCategory(int id);
@@ -11,5 +12,11 @@ namespace PokemonReviewApp.Interfaces
         ICollection<Pokemon> GetPokemonByCategory(int categoryId);
         
         bool CategoryExists(int id);
+
+        //Parte de Criação (Post)
+        bool CreateCategory(Category category);
+
+        bool Save();
+
     }
 }
