@@ -27,6 +27,9 @@ namespace PokemonReviewApp.Interfaces
         //Parte de Atualização
         bool UpdatePokemon(int ownerId, int categoryId, Pokemon pokemon);
 
+        //Parte de Exclusão
+        bool DeletePokemon(Pokemon pokemon);
+
         bool Save();
          
     }

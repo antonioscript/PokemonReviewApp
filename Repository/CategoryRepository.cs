@@ -23,6 +23,13 @@ namespace PokemonReviewApp.Repository
         }
 
 
+        //Parte de Exclusão
+        public bool DeleteCategory(Category category)
+        {
+            _context.Remove(category);
+            return Save();
+        }
+
         //Parte de Visualização
         public bool CategoryExists(int id)
         {

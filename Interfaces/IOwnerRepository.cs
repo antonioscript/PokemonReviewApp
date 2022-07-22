@@ -20,6 +20,9 @@ namespace PokemonReviewApp.Interfaces
         //Parte de Atualização
         bool UpdateOwner(Owner owner);
 
+        //Parte de Exclusão
+        bool DeleteOwner(Owner owner);
+        
         bool Save();
 
     }

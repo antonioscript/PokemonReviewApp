@@ -18,6 +18,9 @@ namespace PokemonReviewApp.Interfaces
         //Parte de Atualização
         bool UpdateReviewer(Reviewer reviewer);
         
+        //Parte de Exclusão
+        bool DeleteReviewer(Reviewer reviewer);
+        
         bool Save();
 
        

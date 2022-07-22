@@ -19,6 +19,9 @@ namespace PokemonReviewApp.Interfaces
         //Parte de Ataulização
         bool UpdateCategory(Category category);
 
+        //Parte de Exclusão
+        bool DeleteCategory(Category category);
+
         bool Save();
 
     }
