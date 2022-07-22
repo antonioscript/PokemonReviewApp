@@ -74,7 +74,7 @@ namespace PokemonReviewApp.Controllers
 
 
         //Parte de Criação
-        [HttpPost]
+        [HttpPost] 
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         public IActionResult CreateOwner([FromQuery] int countryId, [FromBody] OwnerDto ownerCreate)

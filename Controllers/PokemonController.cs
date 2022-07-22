@@ -16,10 +16,11 @@ namespace PokemonReviewApp.Controllers
         private readonly IPokemonRepository _pokemonRepository;
         private readonly IMapper _mapper;
 
-        public PokemonController(IPokemonRepository pokemonRepository, IMapper mapper) // Os parâmetros estão trazendo as classes das pastas Interfaces e Repository
+        public PokemonController(IPokemonRepository pokemonRepository, IMapper mapper) 
+
         {   
-             _pokemonRepository = pokemonRepository;
-             _mapper = mapper;
+            _pokemonRepository = pokemonRepository;
+            _mapper = mapper;
         }
 
         //Pega todos os pokemons
@@ -74,5 +75,39 @@ namespace PokemonReviewApp.Controllers
 
             return Ok(rating);
         }
+
+        //Parte de Criação
+        [HttpPost] 
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        public IActionResult CreatePokemon([FromQuery] int ownerId, [FromQuery] int catId, [FromBody] PokemonDto pokemonCreate)
+        {
+            if (pokemonCreate == null)
+                return BadRequest(ModelState);
+
+            var pokemons = _pokemonRepository.GetPokemons()
+                .Where(c => c.Name.Trim().ToUpper() == pokemonCreate.Name.TrimEnd().ToUpper())
+                .FirstOrDefault();
+
+            if (pokemons != null)
+            {
+                ModelState.AddModelError("", "Owner already exists");
+                return StatusCode(422, ModelState);
+            }
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var pokemonMap = _mapper.Map<Pokemon>(pokemonCreate);
+
+            if (!_pokemonRepository.CreatePokemon(ownerId, catId, pokemonMap))
+            {
+                ModelState.AddModelError("", "Something went wrong while savin");
+                return StatusCode(500, ModelState);
+            }
+
+            return Ok("Successfully created");
+        }
+
     }
 }
