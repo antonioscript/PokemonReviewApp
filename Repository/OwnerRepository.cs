@@ -52,5 +52,13 @@ namespace PokemonReviewApp.Repository
             return saved > 0 ? true : false;
         }
 
+
+        //Parte de Atualização
+        public bool UpdateOwner(Owner owner)
+        {
+            _context.Update(owner);
+            return Save();
+        }
+
     }
 }

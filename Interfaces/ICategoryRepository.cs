@@ -16,6 +16,9 @@ namespace PokemonReviewApp.Interfaces
         //Parte de Criação (Post)
         bool CreateCategory(Category category);
 
+        //Parte de Ataulização
+        bool UpdateCategory(Category category);
+
         bool Save();
 
     }
